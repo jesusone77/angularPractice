@@ -1,2 +1,6 @@
 <p>Esto es otro componente: {{componente}}</p>
-<button class="btn btn-primary" type="button">hola</button>
+<button class="btn btn-success" type="button"
+    [disabled]=desabilitar
+    (click)="encender()"
+>Encender</button>
+<p>{{texto}}</p>

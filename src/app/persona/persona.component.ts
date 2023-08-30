@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class PersonaComponent {
   persona = 'Giselle';
+  textUno = 'Ingresa tu nombre'; 
+
+  modificarTexto (event: Event)  {
+    this.textUno = (<HTMLInputElement>event.target).value;
+  }
 }

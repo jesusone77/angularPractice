@@ -8,4 +8,10 @@ import { Component } from "@angular/core";
 
 export class PersonasComponent{ 
     componente = 'Personas';
+    desabilitar = false;
+    texto = 'Off';
+    encender () {
+        this.desabilitar = true;
+        return this.texto = 'on';
+    }
 }
